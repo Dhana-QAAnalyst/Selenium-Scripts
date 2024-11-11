@@ -40,5 +40,6 @@ public class SearchFunction {
 		WebElement textHeader = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"content\"]/h2")));
 		String text = textHeader.getText();
 		Assert.assertTrue("Search is failed",text.equals("Products meeting the search criteria"));
+		driver.quit();
 		}
 }
