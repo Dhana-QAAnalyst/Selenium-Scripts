@@ -2,19 +2,22 @@ package stepDefinition;
 
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
+import java.util.function.Function;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
-
 
 public class SearchFunction {
 	WebDriver driver;
@@ -32,6 +35,16 @@ public class SearchFunction {
 		WebElement search = wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("search")));
 		search.sendKeys(deviceModel);
 		driver.findElement(By.cssSelector(".btn.btn-light.btn-lg")).click();
+		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		//Wait ww = new FluentWait(driver)
+				//.withTimeout(Duration.ofSeconds(10))
+				//.pollingEvery(Duration.ofSeconds(2))
+				//.ignoring(NoSuchElementException.class);
+		//WebElement link = (WebElement) ww.until(new Function<WebDriver,WebElement>(){
+		//public WebElement apply (WebDriver driver) {
+		//	return driver.findElement(By.id("ID"));
+		//}
+		//});
 	}
 	
 	@Then("Device models are displayed with details")

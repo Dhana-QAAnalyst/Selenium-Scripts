@@ -21,7 +21,8 @@ public class POMSearchIphone {
 		objHome.searchItem();
 		objSearch = new SearchResultsPage(driver);
 		String text = objSearch.SearchHeader();		
-		Assert.assertTrue("Search is failed",text.equals("Products meeting the search criteria"));
+		//Assert.assertTrue("Search is failed",text.equals("Products meeting the search criteria"));
+		Assert.assertEquals("Products meeting the search criteria", text);
 		driver.quit();
 		System.out.print("hi");
 	}
