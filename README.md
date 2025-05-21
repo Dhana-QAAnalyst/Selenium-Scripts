@@ -2,8 +2,8 @@ Hi,
 
 Thanks for visiting my GitHub space. This repo is created to brush-up my test automation skills and it currently has Selenium and RestAssured Scripts.
 
-Language: Java
-Frameworks: TestNG and Cucumber
+[Language: Java]
+[Frameworks: TestNG and Cucumber]
 
 Selenium-Scripts -> LaunchBrowser - Initializing driver object and navigating to a website
 
