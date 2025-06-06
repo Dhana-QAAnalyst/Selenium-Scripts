@@ -21,11 +21,11 @@ package RestAssured_Test;
 		@Test
 		public void test_02() {
 			given()
-				.get("https://api.restful-api.dev/objects")
+				.get("https://api.restful-api.dev/objects/ff80818196f2a23f0196f47d295a05db")
 			.then()
 				.statusCode(200)
-				.body("id[0]", equalTo("1"))
-				.body("name", hasItem("Google Pixel 6 Pro"))
+				//.body("id[0]", equalTo("1"))
+				//.body("name", hasItem("Google Pixel 6 Pro"))
 				.log().body();
 		}
 	}

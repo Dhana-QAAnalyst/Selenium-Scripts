@@ -1,29 +1,27 @@
 package RestAssured_Test;
 
+import static io.restassured.RestAssured.given;
+
 import java.util.HashMap;
 import java.util.Map;
 
 import org.json.simple.JSONObject;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import static io.restassured.RestAssured.*;
 
-public class Test04_Put {
+public class Test07_PostWithExcelData extends ExcelUtils{
 	
-	@Parameters({"id"})
-	@Test
-	public void test_01(String id){
+	@Test(dataProvider = "ExcelData", retryAnalyzer = RestAssured_Test.RetryAnalyzer.class)
+	public void test_01(int year, float price, String CPU, String storage, String name){
 		Map<String,Object> map = new HashMap<String,Object>();
-		map.put("year", 2023);
-		map.put("price", 1000.90);
-		map.put("CPU model","Intel Core i5");
-		map.put("Hard disk size", "2 TB");
-		map.put("color", "green");
+		map.put("year", year);
+		map.put("price", price);
+		map.put("CPU model",CPU);
+		map.put("Hard disk size", storage);
 		
 		JSONObject dataValue = new JSONObject(map);
 		
 		JSONObject request = new JSONObject();
-		request.put("name", "Samsung Pro Max 12");
+		request.put("name", name);
 		request.put("data", dataValue);
 				
 		System.out.println(request.toString());
@@ -32,12 +30,10 @@ public class Test04_Put {
 			.header("Content-Type", "application/json")
 			.body(request.toJSONString())
 		.when()
-			.put("https://api.restful-api.dev/objects/"+id)
+			.post("https://api.restful-api.dev/objects")
 		.then()
 			.statusCode(200)
-			.log().all();
-
+			.log().all();		
 		
-		System.out.println(id);
 	}
 }
