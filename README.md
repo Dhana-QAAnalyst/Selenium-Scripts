@@ -9,7 +9,7 @@ Selenium-Scripts -> LaunchBrowser - Initializing driver object and navigating to
 
 Selenium-Scripts -> POMSearchIPhone - Searching an item on a eCommerce site, It uses cucumber framework, page object model (HomePage, SearchResultsPage) and finally asserts to validate the test results
 
-RestAssuredProject -> It has 5 TCs to test Get, Post, Put, Patch and Delete requests
+RestAssuredProject -> It has 7 TCs to test Get, Post, Put, Patch and Delete API requests added with TestNG DataProvider, RetryAnalyzer and Apache poi concepts
 
 pom.xml file has the required dependencies for any users to run simply by importing the repo.
 
