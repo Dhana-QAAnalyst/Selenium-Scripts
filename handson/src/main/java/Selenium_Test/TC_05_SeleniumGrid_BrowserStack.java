@@ -3,6 +3,7 @@ package Selenium_Test;
 import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
+import io.github.cdimascio.dotenv.Dotenv;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -20,9 +21,11 @@ public class TC_05_SeleniumGrid_BrowserStack {
 	WebDriver driver;
 	HomePage_ultimateqa objHome;
 	LoginPage_ultimateqa objLogin;
+	
+	Dotenv dot = Dotenv.load();
 	String baseurl = "https://ultimateqa.com/automation";
-	String username = "dhanalakshmikris_rXWcKq";
-	String accessKey = "XhD4nxYR24uD4ZsP9pGd";
+	String username = dot.get("BROWSERSTACK_USERNAME");
+	String accessKey = dot.get("BROWSERSTACK_ACCESS_KEY");
 	String browserStackURL = "https://"+username+":"+accessKey+"@hub-cloud.browserstack.com/wd/hub";
 	
 	@BeforeTest
