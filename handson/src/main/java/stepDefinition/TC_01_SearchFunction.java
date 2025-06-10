@@ -19,11 +19,11 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
 
-public class SearchFunction {
+public class TC_01_SearchFunction {
 	WebDriver driver;
 	@Given("The user launches the openCart website")
 	public void The_user_launches_the_openCart_website() throws Throwable{
-		System.setProperty("Webdriver.chrome.driver","\"C:\\Users\\dhana\\Downloads\\chromedriver_win32\\chromedriver.exe\"");
+		System.setProperty("Webdriver.chrome.driver","\"C:\\Program Files\\chromedriver_win32\\chromedriver.exe\"");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://demo.opencart.com/");	

@@ -7,13 +7,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import Pages.HomePage;
 import Pages.SearchResultsPage;
 
-public class POMSearchIphone {
+public class TC_02_POMSearchIphone {
 
 	public static void main(String[] args) {
 		WebDriver driver;
 		HomePage objHome;
 		SearchResultsPage objSearch;
-		System.setProperty("Webdriver.chrome.driver","\"C:\\Users\\dhana\\Downloads\\chromedriver_win32\\chromedriver.exe\"");
+		System.setProperty("Webdriver.chrome.driver","\"C:\\Program Files\\chromedriver_win32\\chromedriver.exe\"");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://demo.opencart.com/");		
@@ -24,6 +24,5 @@ public class POMSearchIphone {
 		//Assert.assertTrue("Search is failed",text.equals("Products meeting the search criteria"));
 		Assert.assertEquals("Products meeting the search criteria", text);
 		driver.quit();
-		System.out.print("hi");
 	}
 }

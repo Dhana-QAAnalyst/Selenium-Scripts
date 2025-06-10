@@ -1,106 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-06T16:19:05 EDT" name="Default suite" finished-at="2025-06-06T16:19:20 EDT" duration-ms="15170">
+  <suite started-at="2025-06-08T15:58:33 EDT" name="Default suite" finished-at="2025-06-08T15:58:36 EDT" duration-ms="3303">
     <groups>
     </groups>
-    <test started-at="2025-06-06T16:19:05 EDT" name="Default test" finished-at="2025-06-06T16:19:20 EDT" duration-ms="15170">
-      <class name="RestAssured_Test.Test07_PostWithExcelData">
-        <test-method signature="test_01(int,float,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:RestAssured_Test.Test07_PostWithExcelData@3eb25e1a]" started-at="2025-06-06T16:19:07 EDT" name="test_01" data-provider="ExcelData" finished-at="2025-06-06T16:19:19 EDT" duration-ms="12064" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[2026]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[1200.0]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Speed4U]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[4 TB]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Google 12]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2025-06-08T15:58:33 EDT" name="Default test" finished-at="2025-06-08T15:58:36 EDT" duration-ms="3303">
+      <class name="RestAssured_Test.Test01_GET">
+        <test-method signature="test_02()[pri:0, instance:RestAssured_Test.Test01_GET@3857f613]" started-at="2025-06-08T15:58:33 EDT" name="test_02" finished-at="2025-06-08T15:58:36 EDT" duration-ms="3260" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_01 -->
-        <test-method signature="test_01(int,float,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:RestAssured_Test.Test07_PostWithExcelData@3eb25e1a]" started-at="2025-06-06T16:19:19 EDT" name="test_01" data-provider="ExcelData" finished-at="2025-06-06T16:19:20 EDT" duration-ms="593" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[2027]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[2000.0]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Intel i7]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[3 TB]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Samsung 14]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_01 -->
-        <test-method signature="test_01(int,float,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:RestAssured_Test.Test07_PostWithExcelData@3eb25e1a]" started-at="2025-06-06T16:19:20 EDT" name="test_01" data-provider="ExcelData" finished-at="2025-06-06T16:19:20 EDT" duration-ms="671" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[2026]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[1000.0]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Intel i3]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[1 TB]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Samsung 10]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_01 -->
-      </class> <!-- RestAssured_Test.Test07_PostWithExcelData -->
+        </test-method> <!-- test_02 -->
+      </class> <!-- RestAssured_Test.Test01_GET -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
