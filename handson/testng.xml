@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" parallel="methods" name="Test">
+    <classes>
+      <class name="TC_03_Selenium_Test.SeleniumGrid_LaunchBrowser"/>
+      <class name="TC_04_Selenium_Test.SeleniumGrid_ParallelExecution"/>
+    </classes>
+  </test>
+</suite>

@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="RestAssured_Test.Test01_GET">
+      <class name="Selenium_Test.BrowserStack_ParallelExecution">
         <methods>
-          <include name="test_02"/>
+          <include name="Test01_Firefox"/>
         </methods>
-      </class> <!-- RestAssured_Test.Test01_GET -->
+      </class> <!-- Selenium_Test.BrowserStack_ParallelExecution -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
