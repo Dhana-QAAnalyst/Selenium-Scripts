@@ -1,19 +1,34 @@
-Hi,
+# Test Automation Repository
 
-Thanks for visiting my GitHub space. This repo is created to brush-up my test automation skills and it currently has Selenium and RestAssured Scripts.
+Welcome to my test automation repository! This project is designed to help me sharpen my automation skills with practical scripts and frameworks.
 
-[Language: Java]
-[Frameworks: TestNG and Cucumber]
+---
 
-Selenium-Scripts -> LaunchBrowser - Initializing driver object and navigating to a website
+## Technologies Used
 
-Selenium-Scripts -> POMSearchIPhone - Searching an item on a eCommerce site, It uses cucumber framework, page object model (HomePage, SearchResultsPage) and finally asserts to validate the test results
+- **Language:** Java  
+- **Frameworks:** Selenium, TestNG, Cucumber  
+- **Tools:** BrowserStack, Selenium Grid, RestAssured, Apache POI  
 
-RestAssuredProject -> It has 7 TCs to test Get, Post, Put, Patch and Delete API requests added with TestNG DataProvider, RetryAnalyzer and Apache poi concepts
+---
 
-pom.xml file has the required dependencies for any users to run simply by importing the repo.
+## Project Structure
 
+### Selenium-Scripts  
+- Initializes WebDriver objects  
+- Navigates to websites  
+- Accesses web elements using local WebDriver and RemoteWebDriver with BrowserStack  
+- Supports parallel test execution using Selenium Grid and TestNG  
 
-Regards,
+### RestAssuredProject  
+- Includes 7 test cases to test REST API methods: GET, POST, PUT, PATCH, DELETE  
+- Utilizes TestNG DataProvider and RetryAnalyzer for robust test runs  
+- Demonstrates use of Apache POI for data-driven testing  
 
-Dhanalakshmi Krishnan
+---
+
+## How to Run
+
+1. Clone the repository  
+   ```bash
+   git clone https://github.com/Dhana-QAAnalyst/Selenium-Scripts.git
