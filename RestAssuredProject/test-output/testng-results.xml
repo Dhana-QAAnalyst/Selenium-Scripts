@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-08T15:58:33 EDT" name="Default suite" finished-at="2025-06-08T15:58:36 EDT" duration-ms="3303">
+  <suite started-at="2025-06-19T22:21:45 EDT" name="Default suite" finished-at="2025-06-19T22:21:48 EDT" duration-ms="3020">
     <groups>
     </groups>
-    <test started-at="2025-06-08T15:58:33 EDT" name="Default test" finished-at="2025-06-08T15:58:36 EDT" duration-ms="3303">
-      <class name="RestAssured_Test.Test01_GET">
-        <test-method signature="test_02()[pri:0, instance:RestAssured_Test.Test01_GET@3857f613]" started-at="2025-06-08T15:58:33 EDT" name="test_02" finished-at="2025-06-08T15:58:36 EDT" duration-ms="3260" status="PASS">
+    <test started-at="2025-06-19T22:21:45 EDT" name="Default test" finished-at="2025-06-19T22:21:48 EDT" duration-ms="3020">
+      <class name="RestAssured_Test.Test02_POST">
+        <test-method signature="test_01()[pri:0, instance:RestAssured_Test.Test02_POST@4116aac9]" started-at="2025-06-19T22:21:45 EDT" name="test_01" finished-at="2025-06-19T22:21:48 EDT" duration-ms="2977" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_02 -->
-      </class> <!-- RestAssured_Test.Test01_GET -->
+        </test-method> <!-- test_01 -->
+      </class> <!-- RestAssured_Test.Test02_POST -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
