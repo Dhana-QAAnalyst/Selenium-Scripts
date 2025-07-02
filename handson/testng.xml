@@ -3,8 +3,8 @@
 <suite name="Suite">
   <test thread-count="5" parallel="methods" name="Test">
     <classes>
-      <class name="TC_03_Selenium_Test.SeleniumGrid_LaunchBrowser"/>
-      <class name="TC_04_Selenium_Test.SeleniumGrid_ParallelExecution"/>
+      <class name="Selenium_Test.TC_03_SeleniumGrid_LaunchBrowser"/>
+      <class name="Selenium_Test.TC_04_SeleniumGrid_ParallelExecution"/>
     </classes>
   </test>
 </suite>
