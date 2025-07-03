@@ -6,6 +6,7 @@ pipeline {
             steps {
                 deleteDir() // This will wipe out everything in the workspace
             }
+        }
         stage('UI Test cases') {
             steps {
                 echo 'Triggering UI testing job'
