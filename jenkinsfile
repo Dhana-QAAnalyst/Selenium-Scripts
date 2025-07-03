@@ -1,0 +1,50 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Clean Workspace') {
+            steps {
+                deleteDir() // This will wipe out everything in the workspace
+            }
+        stage('UI Test cases') {
+            steps {
+                echo 'Triggering UI testing job'
+                build quietPeriod: 5, wait:true, propagate: false, job: 'UI_Job'
+            }
+        }
+            
+        stage('API Test cases') {
+            steps {
+                echo 'Triggering API testing job'
+                build quietPeriod: 5, wait:true, propagate: false, job: 'new'
+            } 
+        }
+        
+    }
+
+    post {
+                
+        success {
+                echo 'All QA jobs are passed'
+                testNG()
+                mail bcc: '', 
+                    body: 'Success: UI and API ', 
+                    cc: 'sugirthasugii@gmail.com', 
+                    from: 'dhanalakshmi.k.work@gmail.com', 
+                    subject: 'Pipeline Job run status', 
+                    to: 'dhanalakshmisugirtha@gmail.com'
+                }
+        failure {
+                echo 'check the logs for failure'
+                mail bcc: '', 
+                    body: 'Failed: UI orAPI ', 
+                    cc: 'sugirthasugii@gmail.com', 
+                    from: 'dhanalakshmi.k.work@gmail.com', 
+                    subject: 'Pipeline Job run status', 
+                    to: 'dhanalakshmisugirtha@gmail.com'
+                }
+        //always {
+        //archiveArtifacts artifacts: '**/target/**/*.xml, **/screenshots/*.png', fingerprint: true
+        //        }
+        }
+}
