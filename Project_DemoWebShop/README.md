@@ -46,7 +46,7 @@ This project contains **end-to-end automation test cases** for the [Demo Web Sho
 - Install **Chrome browser** 
 - IDE (Eclipse/IntelliJ) and **Cucumber plugin**
 ### 🚀 How to Run
-- Clone the repo - git clone https://github.com/Dhana-QAAnalyst/Selenium-Scripts/Project_DemoWebShop.git
+- Clone the repo - git clone https://github.com/Dhana-QAAnalyst/Selenium-Scripts/tree/207556e75d4115762b3711aa7e96473edc9205cf/Project_DemoWebShop.git
 - Import as a Maven project in your IDE
 - [optional] Update the feature file input to test it with different test data
 - Run the test scripts from Runner.java
