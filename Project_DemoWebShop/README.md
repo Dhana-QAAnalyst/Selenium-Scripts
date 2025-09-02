@@ -56,6 +56,7 @@ This project contains **end-to-end automation test cases** for the [Demo Web Sho
   ## Note
   - Login, Place order, Validate purchased order and Log out are the scripts in my test suite.
   - Runner.java is configured to run the complete suite.
+  - **io.github.bonigarcia:webdrivermanager** dependency is added to pom.xml so it will automatically download the driver binaries at runtime.
   - The script automatically captures the screenshots of failed test cases.
     
   ---
