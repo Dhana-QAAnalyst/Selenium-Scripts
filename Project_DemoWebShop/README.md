@@ -23,7 +23,7 @@ This project contains **end-to-end automation test cases** for the [Demo Web Sho
 ---
 
 ## 📂 Project Structure
-- **DemoWebShop/**
+- **Project_DemoWebShop/**
   - **src/main/java/**
       - **com/example/pages/** → POM classes
   - **src/test/java/**    - 
