@@ -1,6 +1,6 @@
 # Demo Web Shop Automation
 
-This project contains **end-to-end automation test cases** for the [Demo Web Shop](https://demowebshop.tricentis.com/) application.  It validates core e-commerce workflows such as **login, browse an item, add to cart, verify the price calculation, checkout, validate order histry and logout** using Selenium and BDD Cucumber.
+This project contains **end-to-end automation test cases** for the [Demo Web Shop](https://demowebshop.tricentis.com/) application.  It validates core e-commerce workflows such as **login, browse an item, add to cart, verify the price calculation, checkout, validate order history and logout** using Selenium and BDD Cucumber.
 
 ---
 
