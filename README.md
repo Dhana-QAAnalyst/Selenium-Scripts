@@ -10,7 +10,7 @@ This repository contains multiple automation projects showcasing my hands-on exp
 - **Type:** End-to-end UI automation project  
 - **Details:** Automates functional workflows of the [Demo Web Shop](http://demowebshop.tricentis.com/) application.  
 - Covers major e-commerce scenarios like login, browse items, add to cart, checkout, order history and logout.  
-- 🔹 A detailed `README.md` is available inside this folder.
+  🔹 A detailed `README.md` is available inside this folder.
 
 ---
 
